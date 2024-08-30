@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# mise description="Run the pipeline"
+
+dagger run swift run --package-path $MISE_PROJECT_ROOT pipeline

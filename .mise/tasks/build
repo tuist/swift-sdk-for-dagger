@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# mise description="Build the project"
+
+swift build --product Dagger --configuration release --package-path $MISE_PROJECT_ROOT

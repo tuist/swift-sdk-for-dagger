@@ -7,14 +7,15 @@ let package = Package(
     name: "Dagger",
     platforms: [.macOS("13.0")],
     products: [
-        .library(name: "Dagger", targets: ["Dagger"])
-    ],
-    dependencies: [
+        .library(name: "Dagger", targets: ["Dagger"]),
+        .executable(name: "pipeline", targets: ["Pipeline"])
     ],
     targets: [
+        .executableTarget(name: "Pipeline", dependencies: ["Dagger"]),
         .target(
             name: "Dagger",
-            dependencies: [],
+            dependencies: [
+            ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency"),
             ]
