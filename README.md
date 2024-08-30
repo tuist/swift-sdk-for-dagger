@@ -6,6 +6,17 @@
 > [!NOTE]
 > We plan to move this to the Dagger's organization once the first iteration is stable.
 
+## SDK prototype
+
+If you want to run the prototype in this repository, you can run:
+
+```bash
+dagger run swift run
+```
+
+The code that's being run lives in the `Sources/Pipeline/Pipeline.swift` file.
+
+
 ## Installation
 
 A Dagger pipeline in Swift is represented by an executable Swift package. Start by creating a new Swift package:
